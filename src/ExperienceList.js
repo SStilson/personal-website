@@ -3,10 +3,15 @@ var Experience = require('./Experience');
 
 class ExperienceList extends React.Component {
   render() {
+    const experienceZero = {
+      title: 'Senior Software Engineer at Slack',
+      dates: 'December 2018 - Present',
+      description: 'Owning the product and frontend development aspects of internal tooling to make reliability easy for engineers at Slack. Using technologies like React, Webpack, and Cypress.'
+    }
     const experienceOne = {
       title: 'Software Engineer at ThoughtWorks',
-      dates: 'February 2016 - Present',
-      description: 'So far, I\'ve developed multiple applications for web and mobile, using technologies like ReactJS, AngularJS, Java, and SASS. Presented solutions to technical and business solutions, and drove growth at multiple clients. Also worked with several microservices transformations.'
+      dates: 'February 2016 - November 2018',
+      description: 'Developed multiple applications for web and mobile, using technologies like React, AngularJS, Java, and SASS. Presented solutions to technical and business solutions, and drove growth at multiple clients.'
     }
     const experienceTwo = {
       title: 'Software Engineer at Beyrep',
@@ -21,6 +26,11 @@ class ExperienceList extends React.Component {
     return (
       <div className='resume_section'>
         <h2 className='resume_title'>Experience</h2>
+        <p><a href='/resume-pdf'>See more details</a> or <a href='https://github.com/SStilson/sstilson.github.io/blob/master/resume.pdf'>Download</a></p>
+        <Experience
+          experienceTitle={experienceZero.title}
+          experienceDates={experienceZero.dates}
+          experienceDescription={experienceZero.description}/>
         <Experience
           experienceTitle={experienceOne.title}
           experienceDates={experienceOne.dates}
@@ -32,6 +42,7 @@ class ExperienceList extends React.Component {
         <Experience experienceTitle={experienceThree.title}
           experienceDates={experienceThree.dates}
           experienceDescription={experienceThree.description}/>
+
       </div>
     )
   }

@@ -13,24 +13,21 @@ class Skills extends React.Component {
             <li className='skills_item'>CSS 3</li>
             <li className='skills_item'>SASS</li>
             <li className='skills_item'>Python</li>
-            <li className='skills_item'>ReactJS</li>
+            <li className='skills_item'>React</li>
             <li className='skills_item'>AngularJS</li>
             <li className='skills_item'>NodeJS</li>
-            <li className='skills_item'>Spring</li>
-            <li className='skills_item'>NGINX</li>
-            <li className='skills_item'>Handlebars</li>
-            <li className='skills_item'>Ruby</li>
+            <li className='skills_item'>Webpack</li>
+            <li className='skills_item'>Lodash</li>
           </ul>
         <h3 className='skills_title'>Tools and Platforms</h3>
         <ul className='skills_section'>
           <li className='skills_item'>Jenkins</li>
           <li className='skills_item'>New Relic</li>
-          <li className='skills_item'>Optimizely</li>
-          <li className='skills_item'>Mixpanel</li>
-          <li className='skills_item'>Heroku</li>
-          <li className='skills_item'>Cloud Foundry</li>
+          <li className='skills_item'>Cypress</li>
+          <li className='skills_item'>Jest</li>
+          <li className='skills_item'>Storybook</li>
+          <li className='skills_item'>Grafana</li>
           <li className='skills_item'>Kubernetes</li>
-          <li className='skills_item'>Sketch</li>
         </ul>
       </div>
     )
